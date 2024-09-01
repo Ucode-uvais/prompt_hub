@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PromptHub
 
-## Getting Started
+PromptHub is an innovative platform for developing and sharing AI prompts. Built with Next.js, it features a comprehensive CRUD AI Prompt sharing system, utilizes a MongoDB database, and implements NextAuth for authentication.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Utilizes the latest features of Next.js for server-side rendering and static site generation.
+- **CRUD Operations**: Comprehensive Create, Read, Update, and Delete operations for managing AI prompts.
+- **MongoDB**: Efficient data storage and retrieval using MongoDB.
+- **NextAuth**: Secure authentication and authorization with NextAuth.
+- **Modern Design with Glassmorphism Trend Style**: A modern and visually appealing design, incorporating the glassmorphism trend style for a sleek and contemporary appearance.
+- **Discover and Share AI Prompts**: Allow users to discover AI prompts shared by the community and create their own prompts to share with the world.
+- **Edit and Delete Created Prompts**: Users can edit their created prompts at any time and delete them when needed.
+- **Profile Page**: Each user gets a dedicated profile page showcasing all the prompts they've created, providing an overview of their contributions.
+- - **Copy to Clipboard**: Implement a convenient "Copy to Clipboard" functionality for users to copy the AI prompts for their use easily.
+- **Search Prompts by Specific Tag**: Allow users to search for prompts based on specific tags, making finding prompts related to particular topics easier.
+- **Google Authentication using NextAuth**: Enable secure Google authentication using NextAuth, ensuring a streamlined and trustworthy login experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To get started with PromptHub, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/prompthub.git
+   cd prompthub
 
-## Learn More
+2 **Install dependencies:**
+    npm install
 
-To learn more about Next.js, take a look at the following resources:
+3 **Set up environment variables: Create a .env.local file in the root directory and add the following variables:**
+    MONGODB_URI=your_mongodb_uri
+    GOOGLE_ID=
+    GOOGLE_CLIENT_SECRET=
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_URL_INTERNAL=http://localhost:3000
+    NEXTAUTH_SECRET=your_nextauth_secret
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on these corresponding websites from Google Cloud Console, Cryptpool (for random Auth Secret), and MongoDB.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4 **Run the development server:**
+    npm run dev
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##API Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+GET /api/prompts: Retrieve all prompts.
+POST /api/prompts: Create a new prompt.
+GET /api/prompts/:id: Retrieve a specific prompt by ID.
+PUT /api/prompts/:id: Update a specific prompt by ID.
+DELETE /api/prompts/:id: Delete a specific prompt by ID.
+
