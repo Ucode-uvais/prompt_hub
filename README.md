@@ -29,8 +29,8 @@ To get started with PromptHub, follow these steps:
     npm install
 
 3 **Set up environment variables: Create a .env.local file in the root directory and add the following variables:**
-     - MONGODB_URI=your_mongodb_uri.
-     - GOOGLE_ID=.
+     - MONGODB_URI=your_mongodb_uri
+    - GOOGLE_ID=
      - GOOGLE_CLIENT_SECRET=.
      - NEXTAUTH_URL=http://localhost:3000.
      - NEXTAUTH_URL_INTERNAL=http://localhost:3000.
