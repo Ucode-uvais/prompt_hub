@@ -6,7 +6,9 @@ const Home = () => {
       <h1 className="head_text text-center">
         Discover & Share
         <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">AI-Powered Prompts</span>
+        <span className="green_teal_gradient text-center">
+          AI-Powered Prompts
+        </span>
       </h1>
       <p className="desc text-center">
         PromptHub is an open-source tool for discovering, creating, and sharing

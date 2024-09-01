@@ -22,10 +22,10 @@ const Nav = () => {
       <Link href="/" className="flex gap-2 flex-center">
         <Image
           src="/assets/images/logo00.png"
+          className="object-contain"
           alt="PromptHub logo"
           width={30}
           height={30}
-          className="object-contain"
         />
         <p className="logo_text">PromptHub</p>
       </Link>
